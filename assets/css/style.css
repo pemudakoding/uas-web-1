@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --color-primary: #FFCB42;
+  --color-secondary: #e2e1c9;
+  --color-default: #f8f6ba;
+  --color-dark: #100720;
+}
+body {
+  color: var(--color-default);
+  font-size: 1.463rem
+}
+
+ul {
+  list-style-type: square;
+}
+
+.font-pixel {
+  font-family: 'Press Start 2P', cursive;
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-default);
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.text-secondary {
+  color: var(--color-secondary) !important;
+}
+
+.btn-outline-primary {
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+}
+
+.fs-sm {
+  font-size: 1rem;
+}
+
+.wrapper {
+  background-color: var(--color-dark);
+}
+
