@@ -45,7 +45,15 @@
       </header>
       <main class=" p-4">
         <section class="site-hero mb-5 pb-5">
-          <form id="loginForm">
+          <form id="registForm">
+            <div class="form-group mb-2">
+              <label for="inputName">Nama</label>
+              <input type="text" class="form-control bg-transparent border border-3 border-warning text-light" id="inputName" aria-describedby="emailHelp" placeholder="John Doe" autocomplete="off">
+            </div>
+            <div class="form-group mb-2">
+              <label for="inputUser">Username</label>
+              <input type="text" class="form-control bg-transparent border border-3 border-warning text-light" id="inputUser" aria-describedby="emailHelp" placeholder="johndoe" autocomplete="off">
+            </div>
             <div class="form-group mb-2">
               <label for="inputEmail">Email</label>
               <input type="email" class="form-control bg-transparent border border-3 border-warning text-light" id="inputEmail" aria-describedby="emailHelp" placeholder="your@example.com" autocomplete="off">
@@ -54,7 +62,7 @@
               <label for="inputPassword">Password</label>
               <input type="password" class="form-control bg-transparent border border-3 border-warning text-light" id="inputPassword" placeholder="Password">
             </div>
-            <button type="submit" class="btn btn-warning">Masuk</button>
+            <button type="submit" class="btn btn-warning">Daftar</button>
           </form>
         </section>
         <footer class="site-footer text-center fs-sm border-top border-secondary pt-4 fw-light">
@@ -65,13 +73,13 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script type="text/javascript">
-loginForm.addEventListener("submit", (e) => {
+registForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let email = document.getElementById("inputEmail");
+  let inputName = document.getElementById("inputName");
 
-  if (email.value) {
-    alert('Login Berhasil!');
+  if (inputName.value) {
+    alert('Selamat bergabung ' + inputName.value + '!');
     window.location.href = "/";
   }
 });
